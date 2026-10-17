@@ -1,0 +1,105 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Gender Predictor</title>
+
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <main class="container">
+
+        <nav class="navbar">
+            <a href="#" class="logo">
+                <span class="logo-icon">✦</span>
+                Genderly
+            </a>
+            <span class="nav-tag">AI NAME ANALYZER</span>
+        </nav>
+
+        <section class="hero">
+
+            <div class="hero-badge">
+                <span class="sparkle">✧</span>
+                SMART NAME PREDICTION
+            </div>
+
+            <h1>
+                Can your name<br>
+                reveal your <span>gender?</span>
+            </h1>
+
+            <p class="description">
+                Curious about what your name says?
+                Enter your name and let our predictor
+                make an estimate for you.
+            </p>
+
+            <div class="predictor-card">
+
+                <div class="card-heading">
+                    <div class="card-icon">✦</div>
+                    <div>
+                        <h2>Try it yourself</h2>
+                        <p>Enter a name to get started</p>
+                    </div>
+                </div>
+
+                <form id="genderForm">
+
+                    <label for="name">YOUR NAME</label>
+
+                    <div class="input-wrapper">
+                        <span class="user-icon">♙</span>
+                        <input
+                            type="text"
+                            id="name"
+                            placeholder="e.g. Alex, Sarah..."
+                            autocomplete="given-name"
+                            required
+                        >
+                    </div>
+
+                    <button type="submit" id="predictBtn">
+                        Predict Gender
+                        <span>→</span>
+                    </button>
+
+                </form>
+
+                <div class="result" id="result">
+                    <div class="result-icon">
+                        <img src="" >
+                    </div>
+                    <h3 id="resultTitle">Your result will appear here</h3>
+                    <p id="resultText">
+                        Enter your name above to see your prediction.
+                    </p>
+                </div>
+
+                <p class="disclaimer">
+                    ✧ Predictions are estimates based on <span>name</span> data,
+                    not a guarantee of someone's gender.
+                </p>
+
+            </div>
+
+            <div class="bottom-note">
+                <span>✦</span> Simple name. Interesting insights.
+                <span>✦</span>
+            </div>
+
+        </section>
+
+    </main>
+
+    <script src="index.js"></script>
+</body>
+</html>
